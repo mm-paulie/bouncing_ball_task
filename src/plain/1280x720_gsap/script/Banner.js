@@ -9,15 +9,16 @@ export default class Banner {
   }
 
   async init() {
-
     this.vid = document.body.querySelector(".video1");
-    if(!config.content.gsap.showVideo) {
-      this.vid.style.opacity = 0;
-    }
+    this.banner = document.body.querySelector('.banner');
+    this.buttonSwitch = document.body.querySelector('.button_switch');
+    this.buttonSwitchCopy = document.body.querySelector('.button_switch_copy');
+    this.showVideo = false;
+    this.banner.classList.add('hideVideo');
+    this.buttonSwitch.addEventListener('click', this.handleClick);
 
-    if(config.content.gsap.syncVideo) {
-      gsap.ticker.add(this.seekVideo);
-    }
+
+    gsap.ticker.add(this.seekVideo);
 
   }
 
@@ -31,29 +32,16 @@ export default class Banner {
     this.animation = animation;
   }
 
-  handleExit = () => {
-    window.open(window.clickTag, '_blank');
-    this.animation.getTimeline().progress(1);
-  };
-
-  /**
-   * When client clicks this function will be triggerd.
-   */
   handleClick = () => {
-    this.handleExit();
-  };
-
-  /**
-   * When mouse rolls over unit.
-   */
-  handleRollOver = () => {
-
-  };
-
-  /**
-   * When mouse rolls out unit.
-   */
-  handleRollOut = () => {
+    if(this.showVideo) {
+      this.showVideo = false;
+      this.banner.classList.add('hideVideo');
+      this.buttonSwitchCopy.innerHTML = config.content.copy_show_video;
+    } else {
+      this.showVideo = true;
+      this.banner.classList.remove('hideVideo');
+      this.buttonSwitchCopy.innerHTML = config.content.copy_hide_video;
+    }
 
   };
 

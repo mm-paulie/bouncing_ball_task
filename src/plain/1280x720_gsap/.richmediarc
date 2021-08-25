@@ -12,10 +12,10 @@
   },
   "content": {
     "css": "./css/style.css",
+    "copy_hide_video": "HIDE VIDEO",
+    "copy_show_video": "SHOW VIDEO",
     "gsap": {
-      "loop": true,
-      "showVideo": true,
-      "syncVideo": true
+      "loop": true
     }
   }
 }

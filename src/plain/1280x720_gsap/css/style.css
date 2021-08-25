@@ -70,3 +70,28 @@ body {
   transform-origin: center center;
 }
 
+.button_switch {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background-color: green;
+  font-weight: bold;
+}
+
+.button_switch_copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.hideVideo {
+.video1 {
+    opacity: 0;
+  }
+}
