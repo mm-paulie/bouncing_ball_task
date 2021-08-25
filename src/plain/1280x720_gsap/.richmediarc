@@ -1,0 +1,21 @@
+{
+  "parent": "../shared/.sharedrc",
+  "settings": {
+    "size": {
+      "width": 1280,
+      "height": 720
+    },
+    "entry": {
+      "js": "./script/main.js",
+      "html": "./index.hbs"
+    }
+  },
+  "content": {
+    "css": "./css/style.css",
+    "gsap": {
+      "loop": true,
+      "showVideo": true,
+      "syncVideo": true
+    }
+  }
+}
