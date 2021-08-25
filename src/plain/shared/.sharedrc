@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "entry": {
+      "js": "./script/main.js",
+      "html": "./index.hbs"
+    }
+  },
+  "content": {
+    "css": "./css/style.css",
+    "bgcolor": "#FFFFFF",
+    "video": "./video/bouncing_ball.mp4"
+  }
+}
