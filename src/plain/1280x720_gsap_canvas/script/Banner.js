@@ -1,17 +1,13 @@
-import { GSDevTools } from 'gsap/dist/GSDevTools';
 import config from "richmediaconfig";
 
 export default class Banner {
 
   constructor(config) {
-
     // add required components here
     this.config = config;
   }
 
   async init() {
-
-
     this.canvas = document.getElementById('canvas');
     this.ctx = this.canvas.getContext('2d');
     this.video = document.body.querySelector('.video1');

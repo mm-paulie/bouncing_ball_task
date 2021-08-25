@@ -1,4 +1,3 @@
-import { GSDevTools } from 'gsap/dist/GSDevTools';
 import config from "richmediaconfig";
 
 export default class Banner {
@@ -10,15 +9,11 @@ export default class Banner {
   }
 
   async init() {
-    if (DEVELOPMENT) {
-      // gsap.registerPlugin(GSDevTools);
-      // GSDevTools.create({animation: this.animation.getTimeline(), globalSync: false});
-    }
+
     this.vid = document.body.querySelector(".video1");
     if(!config.content.gsap.showVideo) {
       this.vid.style.opacity = 0;
     }
-
 
     if(config.content.gsap.syncVideo) {
       gsap.ticker.add(this.seekVideo);

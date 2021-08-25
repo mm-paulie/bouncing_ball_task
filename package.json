@@ -16,7 +16,6 @@
   "dependencies": {
     "@mediamonks/henk": "^1.1.1",
     "@mediamonks/richmedia-temple-server": "^7.3.11",
-    "@mediamonks/temple": "^6.0.2",
-    "gsap": "file:gsap-bonus.tgz"
+    "@mediamonks/temple": "^6.0.2"
   }
 }
